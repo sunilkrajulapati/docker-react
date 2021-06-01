@@ -1,7 +1,7 @@
 version: '3.0'
 
-volumes:
-    web_volume:
+#volumes:
+#    web_volume:
 
 services:
     web:
