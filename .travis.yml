@@ -7,4 +7,4 @@ before_install:
   - docker build -t sunilkrajulapati/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true sunilkrajulapati/docker-react
+  - docker-compose up
