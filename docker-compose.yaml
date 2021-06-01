@@ -13,11 +13,11 @@ services:
         volumes:
             - web_volume:/app/node_modules
             - .:/app
-#    tests:
-#        build:
-#            context: .
-#            dockerfile: Dockerfile.dev
-#        volumes:
-#            - web_volume:/app/node_modules
-#            - .:/app
-#        command: ["npm", "run", "test"]
+    tests:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        volumes:
+            - web_volume:/app/node_modules
+            - .:/app
+        command: ["npm", "run", "test"]
