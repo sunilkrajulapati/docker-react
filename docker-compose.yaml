@@ -1,7 +1,7 @@
 version: '3.0'
 
-#volumes:
-#    web_volume:
+volumes:
+    web_volume:
 
 services:
     web:
@@ -18,6 +18,6 @@ services:
             context: .
             dockerfile: Dockerfile.dev
         volumes:
-#            - web_volume:/app/node_modules
+            - web_volume:/app/node_modules
             - .:/app
         command: ["npm", "run", "test"]
